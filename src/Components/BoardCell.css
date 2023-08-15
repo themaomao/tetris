@@ -1,0 +1,58 @@
+.BoardCell {
+    width: auto;
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .tetromino {
+    border-top: 3px solid rgba(255, 255, 255, 0.1);
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+    border-right: 3px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .tetromino .Sparkle {
+    position: absolute;
+    z-index: 10;
+    width: 6px;
+    height: 6px;
+    left: -2px;
+    top: -2px;
+    background-color: rgba(205, 196, 196, 0.4);
+    border-radius: 4px 4px;
+    /*(i guess)sparkle use to mark the one waiting on the side and the ones droping down */
+  }
+  
+  .tetromino.ghost {
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    /*ghost means the one that always use measure the final position of the sparkle*/
+  }
+  
+  .tetromino.ghost .Sparkle {
+    opacity: 0;
+    /*use to make the ghost and sparkle not visible 
+    but the ghost have its border so still able to see the border for ghost*/
+  }
+  
+  .tetromino__i {
+    background-color: rgba(80, 227, 230, 1);
+  }
+  .tetromino__j {
+    background-color: rgba(36, 95, 223, 1);
+  }
+  .tetromino__l {
+    background-color: rgba(223, 173, 36, 1);
+  }
+  .tetromino__o {
+    background-color: rgba(223, 217, 36, 1);
+  }
+  .tetromino__s {
+    background-color: rgba(48, 211, 56, 1);
+  }
+  .tetromino__t {
+    background-color: rgba(132, 61, 198, 1);
+  }
+  .tetromino__z {
+    background-color: rgba(240, 80, 195, 1);
+  }

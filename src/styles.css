@@ -1,0 +1,17 @@
+/*we don't use index.css,
+change index.css to styles.css due to the styles.css able to use for the whole 
+project but index.css always only for certain part of the project*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(214, 230, 234);
+  height: 120vw;
+  padding: 20px;
+}
+
